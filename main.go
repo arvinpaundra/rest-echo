@@ -116,7 +116,7 @@ func DeleteUserController(c echo.Context) error {
 
 			return c.JSON(http.StatusOK, map[string]interface{}{
 				"message": "success delete user",
-				"user":    users,
+				"user":    nil,
 			})
 		}
 	}
